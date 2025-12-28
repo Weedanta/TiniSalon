@@ -28,17 +28,20 @@
   --color-grey-800: #1f1f1f;
   --color-grey-900: #181818;
 
+
   /* ---------- Primary / Pink ---------- */
-  --color-primary-50:  #faebed;
-  --color-primary-100: #feebc7;
-  --color-primary-200: #e69a5c;
-  --color-primary-300: #d8e48b;
-  --color-primary-400: #d4466e;
-  --color-primary-500: #c91b4a;
-  --color-primary-600: #b71643;
-  --color-primary-700: #8f1135;
-  --color-primary-800: #6f0d29;
-  --color-primary-900: #540a1f;
+  --color-primary-50:  #FDE6F3;
+  --color-primary-100: #F7B1D9;
+  --color-primary-200: #F48BC6;
+  --color-primary-300: #EE55AC;
+  --color-primary-400: #EB359C;
+  --color-primary-500: #E60283;
+  --color-primary-600: #D10277;
+  --color-primary-700: #A3015D;
+  --color-primary-800: #7F0148;
+  --color-primary-900: #610137;
+
+
 
   /* ---------- Secondary / Tosca ---------- */
   --color-secondary-50:  #f6fbfa;
@@ -122,4 +125,8 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+.font-poppins {
+  font-family: var(--font-poppins), Arial, Helvetica, sans-serif;
 }
