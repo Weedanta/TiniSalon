@@ -15,7 +15,7 @@ export function Navbar() {
         {/* Logo */}
         <Link
           href="/"
-          className="text-white text-2xl md:text-3xl font-bold tracking-tight"
+          className="text-white text-2xl md:text-3xl font-bold"
         >
           Tini Salon
         </Link>
@@ -35,16 +35,17 @@ export function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Menu Overlay */}
+      {/* Mobile Menu Panel */}
       <div
         className={cn(
-          "fixed inset-0 bg-[#d81b60] z-40 md:hidden transition-transform duration-300 ease-in-out flex flex-col items-center justify-center gap-8",
-          isOpen ? "translate-y-0" : "-translate-y-full"
+          "fixed w-full top-20 bg-primary-500 z-40 md:hidden transition-all duration-300 ease-in-out rounded-b-2xl shadow-lg p-8 flex flex-col items-center gap-6 max-h-[70vh] overflow-y-auto",
+          isOpen ? "translate-y-0 opacity-100" : "-translate-y-2 opacity-0 pointer-events-none"
         )}
       >
+       
         <NavbarList className="flex-col text-2xl gap-8" onItemClick={close} />
         <a
-          className="bg-[#80ded9] hover:bg-[#6ed0cb] text-[#2d3748] rounded-full px-10 py-6 text-xl font-semibold border-none"
+          className="bg-[#80ded9] hover:bg-[#6ed0cb] text-[#2d3748] rounded-full px-10 py-4 text-xl font-semibold border-none"
           onClick={close}
         >
           Hubungi Kami
