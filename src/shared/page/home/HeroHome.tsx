@@ -17,7 +17,7 @@ const HeroHome = () => {
         alt="Banner Mobile"
         className="md:hidden w-3xl h-auto"
       />
-      <p className="font-medium text-2xl text-center">Salon kecantikan, perawatan diri, dan kursus salon</p>
+      <p className="font-medium text-base md:text-xl xl:text-2xl text-center">Salon kecantikan, perawatan diri, dan kursus salon</p>
     </HeroSection>
   );
 };
