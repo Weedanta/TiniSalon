@@ -6,7 +6,7 @@ import BannerMobile from "@/shared/assets/home/banner-mobile.png";
 
 const HeroHome = () => {
   return (
-    <HeroSection>
+    <HeroSection className="gap-4">
       <Image
         src={BannerDesktop}
         alt="Banner Desktop"
@@ -17,6 +17,7 @@ const HeroHome = () => {
         alt="Banner Mobile"
         className="md:hidden w-3xl h-auto"
       />
+      <p className="font-medium text-2xl text-center">Salon kecantikan, perawatan diri, dan kursus salon</p>
     </HeroSection>
   );
 };
