@@ -1,12 +1,8 @@
-import HomePage from '@/shared/page/HomePage'
-import React from 'react'
+import HomePage from "@/shared/page/HomePage";
+import React from "react";
 
 const page = () => {
-  return (
-    <div className='bg-white min-h-screen'>
-      <HomePage/>
-    </div>
-  )
-}
+  return <HomePage />;
+};
 
-export default page
+export default page;

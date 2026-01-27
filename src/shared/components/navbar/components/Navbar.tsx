@@ -46,7 +46,7 @@ export function Navbar() {
             : "bg-primary-500/20 backdrop-blur-sm"
         )}
       >
-        <div className="lg:w-7xl md:w-6xl w-full flex items-center justify-between px-4 md:px-8 lg:px-0">
+        <div className="lg:max-w-7xl w-full flex items-center justify-between px-4 md:px-8 lg:px-4 xl:px-0">
           {/* Logo */}
           <Link href="/" className="text-white text-2xl md:text-3xl font-bold group">
             <motion.span 
