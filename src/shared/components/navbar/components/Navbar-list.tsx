@@ -36,7 +36,7 @@ export function NavbarList({ className, itemClassName, onItemClick }: NavbarList
           <Link
             href={item.href}
             onClick={onItemClick}
-            className={cn("text-white md:text-xl font-semibold hover:text-white/80 transition-colors", itemClassName)}
+            className={cn("text-white md:text-xl font-semibold hover:text-white/80 transition-colors hover:underline", itemClassName)}
           >
             {item.label}
           </Link>
