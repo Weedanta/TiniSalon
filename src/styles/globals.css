@@ -17,7 +17,7 @@
   --color-foreground: var(--foreground);
 
   /* ---------- Grey / Neutral ---------- */
-  --color-grey-50:  #fdfdfd;
+  --color-grey-50: #fdfdfd;
   --color-grey-100: #fefefe;
   --color-grey-200: #d6d6d6;
   --color-grey-300: #c1c1c1;
@@ -28,23 +28,20 @@
   --color-grey-800: #1f1f1f;
   --color-grey-900: #181818;
 
-
   /* ---------- Primary / Pink ---------- */
-  --color-primary-50:  #FDE6F3;
-  --color-primary-100: #F7B1D9;
-  --color-primary-200: #F48BC6;
-  --color-primary-300: #EE55AC;
-  --color-primary-400: #EB359C;
-  --color-primary-500: #E60283;
-  --color-primary-600: #D10277;
-  --color-primary-700: #A3015D;
-  --color-primary-800: #7F0148;
+  --color-primary-50: #fde6f3;
+  --color-primary-100: #f7b1d9;
+  --color-primary-200: #f48bc6;
+  --color-primary-300: #ee55ac;
+  --color-primary-400: #eb359c;
+  --color-primary-500: #e60283;
+  --color-primary-600: #d10277;
+  --color-primary-700: #a3015d;
+  --color-primary-800: #7f0148;
   --color-primary-900: #610137;
 
-
-
   /* ---------- Secondary / Tosca ---------- */
-  --color-secondary-50:  #f6fbfa;
+  --color-secondary-50: #f6fbfa;
   --color-secondary-100: #e2faf0;
   --color-secondary-200: #d4eee9;
   --color-secondary-300: #c0e7df;
@@ -56,7 +53,7 @@
   --color-secondary-900: #144c57;
 
   /* ---------- Info / Blue ---------- */
-  --color-info-50:  #f6f9ff;
+  --color-info-50: #f6f9ff;
   --color-info-100: #dbeafe;
   --color-info-200: #bfdbfe;
   --color-info-300: #93c5fd;
@@ -68,7 +65,7 @@
   --color-info-900: #1e3a8a;
 
   /* ---------- Success / Green ---------- */
-  --color-success-50:  #f0fdf4;
+  --color-success-50: #f0fdf4;
   --color-success-100: #dcfce7;
   --color-success-200: #bbf7d0;
   --color-success-300: #86efac;
@@ -80,7 +77,7 @@
   --color-success-900: #14532d;
 
   /* ---------- Warning / Yellow ---------- */
-  --color-warning-50:  #fff7ed;
+  --color-warning-50: #fff7ed;
   --color-warning-100: #fef3c7;
   --color-warning-200: #fde68a;
   --color-warning-300: #fde047;
@@ -92,7 +89,7 @@
   --color-warning-900: #713f12;
 
   /* ---------- Danger / Red ---------- */
-  --color-danger-50:  #fef2f2;
+  --color-danger-50: #fef2f2;
   --color-danger-100: #fee2e2;
   --color-danger-200: #fecaca;
   --color-danger-300: #fca5a5;
@@ -129,4 +126,21 @@ body {
 
 .font-poppins {
   font-family: var(--font-poppins), Arial, Helvetica, sans-serif;
+}
+
+/* =====================================
+   Hero Section
+===================================== */
+.hero-surface {
+  background-image: url("../shared/assets/home/bg-mobile.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@media (min-width: 768px) {
+  .hero-surface {
+    background-image: url("../shared/assets/home/bg-desktop.png");
+  }
 }
