@@ -1,5 +1,5 @@
 import React from "react";
-import ProsSection from "@/shared/components/section/ProsSection";
+import ProsSection from "@/components/home/section/ProsSection";
 
 const Pros = () => {
   return (
@@ -13,7 +13,10 @@ const Pros = () => {
           </span>
           ?
         </h2>
-        <p className="text-center text-lg md:text-xl lg:text-2xl xl:text-2xl font-medium text-grey-600">Tini Salon Medan berpengalaman 20+ tahun dan dipercaya ribuan pelanggan.</p>
+        <p className="text-center text-lg md:text-xl lg:text-2xl xl:text-2xl font-medium text-grey-600">
+          Tini Salon Medan berpengalaman 20+ tahun dan dipercaya ribuan
+          pelanggan.
+        </p>
 
         <div className="w-full mt-8 md:mt-12">
           <ProsSection />

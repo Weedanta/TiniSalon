@@ -132,7 +132,7 @@ body {
    Hero Section
 ===================================== */
 .hero-surface {
-  background-image: url("../shared/assets/home/bg-mobile.png");
+  background-image: url("../assets/home/bg-mobile.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -141,7 +141,7 @@ body {
 
 @media (min-width: 768px) {
   .hero-surface {
-    background-image: url("../shared/assets/home/bg-desktop.png");
+    background-image: url("../assets/home/bg-desktop.png");
   }
 }
 
@@ -150,7 +150,7 @@ body {
 ===================================== */
 @font-face {
   font-family: "BlackSignature";
-  src: url("../shared/assets/font/BlackSignature_PERSONAL_USE_ONLY.otf")
+  src: url("../assets/font/BlackSignature_PERSONAL_USE_ONLY.otf")
     format("opentype");
   font-weight: normal;
   font-style: normal;

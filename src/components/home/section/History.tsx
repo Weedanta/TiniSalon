@@ -1,6 +1,6 @@
 import React from "react";
-import ImageSalon from "@/shared/assets/home/salon.png";
-import PerjalananKamiText from "@/shared/assets/home/Perjalanan-Kami.svg";
+import ImageSalon from "@/assets/home/salon.png";
+import PerjalananKamiText from "@/assets/home/Perjalanan-Kami.svg";
 import Image from "next/image";
 
 const History = () => {

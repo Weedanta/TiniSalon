@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { PROS_DATA } from "@/shared/data/pros";
+import { PROS_DATA } from "@/components/home/data/pros";
 
 const ProsSection = () => {
   return (
@@ -27,16 +27,16 @@ const ProsSection = () => {
               flex flex-col justify-center
               ${
                 isOdd
-                  ? "items-start text-left bg-gradient-to-r from-white via-primary-50 to-primary-500/70 rounded-r-[60px]"
-                  : "items-end text-right bg-gradient-to-l from-white via-primary-50 to-primary-500/70 rounded-l-[60px]"
+                  ? "items-start text-left bg-gradient-to-r from-white via-primary-50 to-primary-500/20 rounded-r-[60px]"
+                  : "items-end text-right bg-gradient-to-l from-white via-primary-50 to-primary-500/20 rounded-l-[60px]"
               }
             `}
           >
-            <div className="max-w-2xl">
-              <h3 className="text-xl md:text-3xl font-bold text-primary-600 mb-2 md:mb-4">
+            <div className="w-full">
+              <h3 className="text-xl md:text-3xl font-bold text-primary-500 mb-2 md:mb-4">
                 {item.title}
               </h3>
-              <p className="text-grey-600 text-sm md:text-lg leading-relaxed font-medium">
+              <p className="text-grey-600 text-md md:text-2xl leading-relaxed font-medium">
                 {item.description}
               </p>
             </div>
