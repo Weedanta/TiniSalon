@@ -102,8 +102,7 @@
   --color-danger-900: #7f1d1d;
 
   /* ---------- Fonts ---------- */
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-poppins);
 }
 
 /* =====================================
@@ -144,4 +143,19 @@ body {
   .hero-surface {
     background-image: url("../shared/assets/home/bg-desktop.png");
   }
+}
+
+/* =====================================
+   Custom Fonts
+===================================== */
+@font-face {
+  font-family: "BlackSignature";
+  src: url("../shared/assets/font/BlackSignature_PERSONAL_USE_ONLY.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.text-black-signature {
+  font-family: "BlackSignature", cursive;
 }
