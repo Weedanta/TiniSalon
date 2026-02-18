@@ -14,9 +14,9 @@ export default function Certification() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-black-signature text-4xl md:text-5xl xl:text-6xl text-primary-500 text-center mb-10 md:mb-14"
+          className="text-black-signature text-5xl leading-relaxed md:text-5xl xl:text-6xl text-primary-500 text-center mb-10 md:mb-14" 
         >
-          Sertifikasi Program
+          Sertifikasi &nbsp;Program
         </motion.h2>
 
         {/* Desktop: text left (wider), image right (smaller) */}
@@ -26,7 +26,7 @@ export default function Certification() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.15 }}
-            className="flex-1 text-grey-600 text-sm lg:text-base leading-relaxed"
+            className="flex-1 text-grey-600 text-base lg:text-xl text-justify leading-relaxed"
           >
             Setiap lulusan dari Rudy Hadisuwarno School akan mendapatkan{" "}
             <span className="text-grey-800 font-bold">sertifikasi resmi</span>{" "}

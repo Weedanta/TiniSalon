@@ -11,8 +11,8 @@ const HomePage = () => {
       <HeroHome />
       <History />
       <Pros />
-      <Testimonial />
       <Certification />
+      <Testimonial />
     </div>
   );
 };
