@@ -6,6 +6,11 @@ export interface ProsData {
 
 export const PROS_DATA: ProsData[] = [
   {
+    id: 0,
+    title: "Telah Meluluskan Lebih dari 100 Murid",
+    description: "Meluluskan banyak murid dan beberapa sudah membuka usaha sendiri.",
+  },
+  {
     id: 1,
     title: "Berpengalaman & Tepercaya",
     description:
