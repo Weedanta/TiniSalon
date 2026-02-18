@@ -1,17 +1,12 @@
 @import "tailwindcss";
 
-/* =======================u
-==============
-   Base Variables
-===================================== */
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
-/* =====================================
-   Tailwind Theme Tokens
-===================================== */
+
 @theme inline {
   /* ---------- Base ---------- */
   --color-background: var(--background);
