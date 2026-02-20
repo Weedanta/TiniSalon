@@ -1,4 +1,4 @@
-import HeroSection from "@/components/home/section/HeroSection";
+import HeroSection from "@/components/ui/HeroSection";
 import React from "react";
 import Image from "next/image";
 import BannerDesktop from "@/assets/home/banner-desktop.png";
