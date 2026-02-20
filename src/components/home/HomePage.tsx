@@ -3,6 +3,7 @@ import HeroHome from "./section/HeroHome";
 import History from "./section/History";
 import Pros from "./section/Pros";
 import Testimonial from "./section/Testimonial";
+import Certification from "./section/Certification";
 
 const HomePage = () => {
   return (
@@ -10,6 +11,7 @@ const HomePage = () => {
       <HeroHome />
       <History />
       <Pros />
+      <Certification />
       <Testimonial />
     </div>
   );
