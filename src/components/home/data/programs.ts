@@ -1,6 +1,10 @@
 export interface ProgramPackage {
   id: number;
   title: string;
+  subtitle: string; // e.g. "Paket Dasar" or "Paket Lanjutan"
+  note: string; // context: what's included from previous
+  badge?: string; // e.g. "Terlaris" or "Terlengkap"
+  highlight?: boolean; // true = accented card border
   items: string[];
   duration: string;
   price: string;
@@ -10,6 +14,8 @@ export const PROGRAMS: ProgramPackage[] = [
   {
     id: 1,
     title: "Paket 1",
+    subtitle: "Paket Dasar",
+    note: "Mulai karier salon dari fondasi yang kuat",
     items: [
       "Catok / Babyliss",
       "Cuci Rambut",
@@ -25,13 +31,17 @@ export const PROGRAMS: ProgramPackage[] = [
   },
   {
     id: 2,
-    title: "Tambahan Paket 2",
+    title: "Paket 2",
+    subtitle: "Paket 1 + Lanjutan",
+    note: "Semua materi Paket 1, ditambah skill perawatan lebih lanjut",
+    badge: "Terlaris",
+    highlight: true,
     items: [
       "Pangkas",
       "Bleaching Badan",
       "Keriting Permanen",
-      "Keriting Bulu mata",
-      "Terapi telinga",
+      "Keriting Bulu Mata",
+      "Terapi Telinga",
       "Lulutan",
       "Smoothing Rambut",
     ],
@@ -40,7 +50,9 @@ export const PROGRAMS: ProgramPackage[] = [
   },
   {
     id: 3,
-    title: "Tambahan Paket 3",
+    title: "Paket 3",
+    subtitle: "Paket 2 + Tata Rias Dasar",
+    note: "Semua materi Paket 2, ditambah tata rias & perawatan kuku",
     items: [
       "Toning Rambut",
       "Sanggulan Dasar",
@@ -54,14 +66,16 @@ export const PROGRAMS: ProgramPackage[] = [
   },
   {
     id: 4,
-    title: "Tambahan Paket 4",
+    title: "Paket 4",
+    subtitle: "Paket 3 + Pesta & Wisuda",
+    note: "Semua materi Paket 3, ditambah rias acara formal",
     items: [
       "Smoothing Warna",
       "Highlight Rambut",
-      "Cukur alis",
+      "Cukur Alis",
       "Hair Extension",
-      "Sanggulan Pesta/Wisuda",
-      "Make up Pesta/Wisuda",
+      "Sanggulan Pesta / Wisuda",
+      "Make Up Pesta / Wisuda",
       "Eyelash",
     ],
     duration: "Lama belajar: 2 bulan + 2 bulan PKL",
@@ -69,7 +83,10 @@ export const PROGRAMS: ProgramPackage[] = [
   },
   {
     id: 5,
-    title: "Tambahan Paket 5",
+    title: "Paket 5",
+    subtitle: "Paket 4 + Sulam & Pengantin",
+    note: "Paket terlengkap — semua materi Paket 4 plus teknik semi-permanen",
+    badge: "Terlengkap",
     items: [
       "Sulam Alis",
       "Sulam Eyeliner",

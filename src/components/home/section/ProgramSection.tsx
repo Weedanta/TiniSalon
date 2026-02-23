@@ -11,7 +11,7 @@ export default function ProgramSection() {
       <div className="bg-primary-500/70 py-10 md:py-12 xl:py-16 flex justify-center">
         <div className="lg:max-w-5xl w-full px-6 md:px-8 lg:px-4 xl:px-0 flex flex-col gap-5 md:gap-10">
           {/* Section Title */}
-          <motion.h2    
+          <motion.h2
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -22,14 +22,14 @@ export default function ProgramSection() {
           </motion.h2>
 
           {/* Desktop: 2-column grid, last card centered if odd */}
-          <div className="hidden md:grid md:grid-cols-2 gap-6 xl:gap-8">
+          <div className="hidden md:grid md:grid-cols-2 gap-6 xl:gap-8 items-stretch">
             {PROGRAMS.map((program, i) => {
               const isLastOdd =
                 PROGRAMS.length % 2 !== 0 && i === PROGRAMS.length - 1;
               return (
                 <div
                   key={program.id}
-                  className={isLastOdd ? "col-span-2 w-1/2 mx-auto" : undefined}
+                  className={`flex flex-col${isLastOdd ? " col-span-2 w-1/2 mx-auto" : ""}`}
                 >
                   <ProgramCard program={program} index={i} />
                 </div>
