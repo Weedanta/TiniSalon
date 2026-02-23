@@ -1,11 +1,9 @@
 @import "tailwindcss";
 
-
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
-
 
 @theme inline {
   /* ---------- Base ---------- */
@@ -137,6 +135,26 @@ body {
 @media (min-width: 768px) {
   .hero-surface {
     background-image: url("../assets/home/bg-desktop.png");
+  }
+}
+
+/* =====================================
+   Program Section
+===================================== */
+.program-surface {
+  /* Mobile: scale image to full width, tile downward */
+  background-image: url("../assets/home/walpaper_program_web.png");
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+  background-position: top center;
+}
+
+@media (min-width: 768px) {
+  .program-surface {
+    /* Desktop: scale image to full height, tile sideways */
+    background-size: auto 100%;
+    background-repeat: repeat-x;
+    background-position: center top;
   }
 }
 
