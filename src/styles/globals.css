@@ -1,11 +1,9 @@
 @import "tailwindcss";
 
-
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
-
 
 @theme inline {
   /* ---------- Base ---------- */
@@ -138,6 +136,44 @@ body {
   .hero-surface {
     background-image: url("../assets/home/bg-desktop.png");
   }
+}
+
+/* =====================================
+   Program Section
+===================================== */
+.program-surface {
+  /* Mobile: scale image to full width, tile downward */
+  background-image: url("../assets/home/walpaper_program_web.png");
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+  background-position: top center;
+}
+
+@media (min-width: 768px) {
+  .program-surface {
+    /* Desktop: scale image to full height, tile sideways */
+    background-size: auto 100%;
+    background-repeat: repeat-x;
+    background-position: center top;
+  }
+}
+
+/* Card header corak decorative pattern */
+.program-card-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../assets/home/icon/bg_corak.svg");
+  background-size: auto 80%;
+  background-repeat: repeat-x;
+  background-position: center center;
+  opacity: 0.22;
+  pointer-events: none;
+  z-index: 0;
+}
+.program-card-header > * {
+  position: relative;
+  z-index: 1;
 }
 
 /* =====================================
