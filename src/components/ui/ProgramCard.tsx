@@ -99,7 +99,7 @@ export default function ProgramCard({
                     />
                   </svg>
                 </span>
-                <span className="text-grey-700 text-sm leading-snug">
+                <span className="text-grey-700 text-sm font-medium leading-snug">
                   {item}
                 </span>
               </li>
