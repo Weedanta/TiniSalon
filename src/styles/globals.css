@@ -164,7 +164,7 @@ body {
   position: absolute;
   inset: 0;
   background-image: url("../assets/home/icon/bg_corak.svg");
-  background-size: auto 80%;
+  background-size: auto 100%;
   background-repeat: repeat-x;
   background-position: center center;
   opacity: 0.22;

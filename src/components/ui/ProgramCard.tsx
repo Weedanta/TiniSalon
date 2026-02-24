@@ -24,21 +24,21 @@ export default function ProgramCard({ program, index = 0 }: ProgramCardProps) {
         isHighlight ? "ring-2 ring-secondary-400" : "ring-1 ring-grey-200/60"
       }`}
     >
+      {/* ── Badge — absolute top-right corner ── */}
+      {program.badge && (
+        <span className="absolute top-3 right-3 z-10 bg-secondary-400 text-white text-[10px] font-bold px-3 py-1 rounded-full shadow-md uppercase tracking-wide">
+          {program.badge}
+        </span>
+      )}
+
       {/* ── Gradient header band ── */}
       <div
-        className={`program-card-header relative px-6 pt-6 pb-5 flex flex-col items-center gap-2 overflow-hidden ${
+        className={`program-card-header px-6 pt-6 pb-5 flex flex-col items-center gap-2 overflow-hidden ${
           isHighlight
             ? "bg-gradient-to-br from-primary-500 to-primary-700"
             : "bg-gradient-to-br from-primary-400 to-primary-600"
         }`}
       >
-        {/* Badge */}
-        {program.badge && (
-          <span className="absolute top-4 right-4 bg-secondary-400 text-white text-[10px] font-bold px-3 py-1 rounded-full shadow-md uppercase tracking-wide">
-            {program.badge}
-          </span>
-        )}
-
         {/* Title */}
         <h3 className="text-white text-xl md:text-2xl font-semibold text-center leading-tight">
           {program.title}
