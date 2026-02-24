@@ -8,8 +8,6 @@ import Image from "next/image";
 interface ProgramCardProps {
   program: ProgramPackage;
   index?: number;
-  /** "primary" = pink header (default, home page)
-   *  "secondary" = blue header + blue item bg/bullets (program page) */
   variant?: "primary" | "secondary";
 }
 
@@ -21,7 +19,6 @@ export default function ProgramCard({
   const isHighlight = program.highlight;
   const isSecondary = variant === "secondary";
 
-  // ── Header gradient ──
   const headerGradient = isSecondary
     ? isHighlight
       ? "bg-gradient-to-br from-secondary-600 to-secondary-800"
@@ -30,14 +27,12 @@ export default function ProgramCard({
       ? "bg-gradient-to-br from-primary-500 to-primary-700"
       : "bg-gradient-to-br from-primary-400 to-primary-600";
 
-  // ── Ring / border ──
   const ringClass = isHighlight
     ? isSecondary
-      ? "ring-2 ring-primary-500" // secondary highlight → pink ring
-      : "ring-2 ring-secondary-400" // primary highlight   → tosca ring
+      ? "ring-2 ring-primary-500"
+      : "ring-2 ring-secondary-400"
     : "ring-1 ring-grey-200/60";
 
-  // ── Item list colors ──
   const itemsBg = isSecondary ? "bg-secondary-50" : "bg-primary-50";
   const bulletBg = isSecondary ? "bg-secondary-500" : "bg-primary-500";
   const priceColor = isSecondary ? "text-secondary-500" : "text-primary-500";
@@ -51,14 +46,12 @@ export default function ProgramCard({
       whileHover={{ y: -4, transition: { duration: 0.2 } }}
       className={`relative flex flex-col h-full rounded-3xl overflow-hidden shadow-xl transition-shadow duration-300 hover:shadow-2xl ${ringClass}`}
     >
-      {/* ── Badge — absolute top-right corner ── */}
       {program.badge && (
         <span className="absolute top-3 right-3 z-10 bg-secondary-400 text-grey-500 text-[10px] font-bold px-3 py-1 rounded-full shadow-md uppercase tracking-wide">
           {program.badge}
         </span>
       )}
 
-      {/* ── Gradient header band (blue for secondary, pink for primary) ── */}
       <div
         className={`program-card-header px-6 pt-6 pb-5 flex flex-col items-center gap-2 overflow-hidden ${headerGradient}`}
       >
@@ -70,14 +63,11 @@ export default function ProgramCard({
         </span>
       </div>
 
-      {/* ── White body ── */}
       <div className="bg-white flex flex-col gap-4 flex-1 h-full">
-        {/* Note */}
         <p className="px-6 pt-4 text-xs text-grey-400 text-center italic leading-relaxed">
           {program.note}
         </p>
 
-        {/* Items list — checkmark bullets, bg/bullet color per variant */}
         <div className={`mx-5 rounded-2xl px-5 py-4 flex-1 min-h-0 ${itemsBg}`}>
           <ul className="flex flex-col gap-2">
             {program.items.map((item, i) => (
@@ -107,12 +97,10 @@ export default function ProgramCard({
           </ul>
         </div>
 
-        {/* Duration */}
         <p className="px-6 text-xs text-grey-400 italic text-center">
           {program.duration}
         </p>
 
-        {/* Price row */}
         <div className="px-6 flex items-center gap-2 justify-center">
           <Image src={Pricetag} alt="Price" className="h-5 w-5 shrink-0" />
           <span
@@ -122,7 +110,6 @@ export default function ProgramCard({
           </span>
         </div>
 
-        {/* CTA button */}
         <div className="px-6 pb-6">
           <a
             href="https://wa.me/6281234567890"

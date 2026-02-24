@@ -2,24 +2,22 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import imgCertification from "@/assets/home/img_certification.webp"
+import imgCertification from "@/assets/home/img_certification.webp";
 
 export default function Certification() {
   return (
     <section className="bg-white flex justify-center">
       <div className="lg:max-w-5xl w-full px-8 md:px-8 lg:px-4 xl:px-0 py-16 md:py-20 xl:py-28">
-        {/* Title — centered */}
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-black-signature text-5xl leading-relaxed md:text-5xl xl:text-6xl text-primary-500 text-center mb-10 md:mb-14" 
+          className="text-black-signature text-5xl leading-relaxed md:text-5xl xl:text-6xl text-primary-500 text-center mb-10 md:mb-14"
         >
           Sertifikasi &nbsp;Program
         </motion.h2>
 
-        {/* Desktop: text left (wider), image right (smaller) */}
         <div className="hidden md:flex items-center gap-10 xl:gap-16">
           <motion.p
             initial={{ opacity: 0, x: -40 }}
@@ -52,7 +50,6 @@ export default function Certification() {
           </motion.div>
         </div>
 
-        {/* Mobile: image top, text bottom */}
         <div className="flex flex-col gap-6 md:hidden">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
