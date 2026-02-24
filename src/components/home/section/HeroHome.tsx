@@ -1,8 +1,8 @@
 import HeroSection from "@/components/ui/HeroSection";
 import React from "react";
 import Image from "next/image";
-import BannerDesktop from "@/assets/home/banner-desktop.png";
-import BannerMobile from "@/assets/home/banner-mobile.png";
+import BannerDesktop from "@/assets/home/banner-desktop.webp";
+import BannerMobile from "@/assets/home/banner-mobile.webp";
 import { Button } from "@/components/ui/button";
 
 const HeroHome = () => {
