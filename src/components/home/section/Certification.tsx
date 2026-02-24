@@ -46,6 +46,7 @@ export default function Certification() {
               width={380}
               height={280}
               className="w-72 lg:w-80 xl:w-96 h-auto rounded-2xl object-cover"
+              draggable={false}
             />
           </motion.div>
         </div>
@@ -63,6 +64,7 @@ export default function Certification() {
               width={520}
               height={390}
               className="w-full h-auto rounded-2xl object-cover"
+              draggable={false}
             />
           </motion.div>
 

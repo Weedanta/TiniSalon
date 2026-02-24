@@ -30,7 +30,7 @@ function StarRating({ rating }: { rating: number }) {
 function QuoteIcon() {
   return (
     <div className="w-12 h-12 rounded-full bg-secondary-200 flex items-center justify-center mx-auto mb-2">
-      <Image src={icQuote} alt="quote" className="w-full h-full" />
+      <Image src={icQuote} alt="quote" className="w-full h-full" draggable={false} />
     </div>
   );
 }

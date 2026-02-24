@@ -54,7 +54,6 @@ function Button({
 }: ButtonProps) {
   const baseClassName = cn(buttonVariants({ variant, size, className }))
 
-  // Jika menggunakan asChild
   if (asChild) {
     return (
       <Slot
@@ -67,7 +66,6 @@ function Button({
     )
   }
 
-  // Jika ada href, gunakan Next.js Link
   if ("href" in props && props.href) {
     const { href, ...linkProps } = props
     return (
@@ -82,7 +80,6 @@ function Button({
     )
   }
 
-  // Default: gunakan button
   return (
     <button
       data-slot="button"

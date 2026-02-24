@@ -47,7 +47,6 @@ export function Navbar() {
         )}
       >
         <div className="lg:max-w-7xl w-full flex items-center justify-between px-4 md:px-8 lg:px-4 xl:px-0">
-          {/* Logo */}
           <Link href="/" className="text-white text-2xl md:text-3xl font-bold group">
             <motion.span 
               initial={{ opacity: 0, x: -20 }}
@@ -69,7 +68,6 @@ export function Navbar() {
             Hubungi Kami
           </motion.a>
 
-          {/* Mobile Toggle */}
           <motion.button
             whileTap={{ scale: 0.9 }}
             onClick={toggle}
@@ -80,7 +78,6 @@ export function Navbar() {
           </motion.button>
         </div>
 
-        {/* Decorative Bottom Line */}
         <motion.div 
           className="absolute bottom-0 left-0 h-[1px] bg-gradient-to-r from-transparent via-white/50 to-transparent w-full"
           initial={{ scaleX: 0 }}
@@ -89,7 +86,6 @@ export function Navbar() {
         />
       </motion.nav>
 
-      {/* Mobile Menu Panel */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -111,7 +107,6 @@ export function Navbar() {
               </motion.a>
             </div>
             
-            {/* Decorative bottom glow */}
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 h-20 bg-white/5 rounded-full blur-3xl pointer-events-none" />
           </motion.div>
         )}

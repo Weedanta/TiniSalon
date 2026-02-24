@@ -12,11 +12,13 @@ const HeroHome = () => {
         src={BannerDesktop}
         alt="Banner Desktop"
         className="hidden md:block md:w-2xl xl:w-4xl h-auto"
+        draggable={false}
       />
       <Image
         src={BannerMobile}
         alt="Banner Mobile"
         className="md:hidden w-3xl h-auto"
+        draggable={false}
       />
       <p className="font-medium text-sm sm:text-base md:text-xl xl:text-xl text-center">
         Salon kecantikan, perawatan diri, dan kursus salon
