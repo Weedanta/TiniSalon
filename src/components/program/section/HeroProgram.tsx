@@ -10,6 +10,7 @@ const HeroProgram = () => {
         src={TitleProgram}
         alt="Title Program"
         className="w-72 md:w-xs xl:w-sm h-auto"
+        draggable={false}
       />
       <div className="lg:w-7/10 md:w-8/10 w-4/5 h-auto py-6 md:py-12 bg-primary-50 rounded-4xl text-gray-700 font-medium px-10 md:px-20 text-center">
         Metode pembelajaran dilaksanakan secara{" "}
