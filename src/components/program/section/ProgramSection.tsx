@@ -26,7 +26,7 @@ const ProgramSection = () => {
             key={program.id}
             className="flex flex-col w-[calc(33.333%-1rem)]"
           >
-            <ProgramCard program={program} index={i} />
+            <ProgramCard program={program} index={i} variant="secondary" />
           </div>
         ))}
       </div>
@@ -34,7 +34,12 @@ const ProgramSection = () => {
       {/* Mobile: single column */}
       <div className="flex flex-col gap-5 md:hidden">
         {PROGRAMS.map((program, i) => (
-          <ProgramCard key={program.id} program={program} index={i} />
+          <ProgramCard
+            key={program.id}
+            program={program}
+            index={i}
+            variant="secondary"
+          />
         ))}
       </div>
     </section>
