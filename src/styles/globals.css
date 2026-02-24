@@ -125,7 +125,7 @@ body {
    Hero Section
 ===================================== */
 .hero-surface {
-  background-image: url("../assets/home/bg-mobile.png");
+  background-image: url("../assets/home/bg-mobile.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -134,7 +134,7 @@ body {
 
 @media (min-width: 768px) {
   .hero-surface {
-    background-image: url("../assets/home/bg-desktop.png");
+    background-image: url("../assets/home/bg-desktop.webp");
   }
 }
 
@@ -143,7 +143,7 @@ body {
 ===================================== */
 .program-surface {
   /* Mobile: scale image to full width, tile downward */
-  background-image: url("../assets/home/walpaper_program_web.png");
+  background-image: url("../assets/home/walpaper_program_web.webp");
   background-size: 100% auto;
   background-repeat: repeat-y;
   background-position: top center;

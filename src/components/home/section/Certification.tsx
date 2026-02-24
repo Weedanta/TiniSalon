@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import imgCertification from "@/assets/home/img_certification.png"
+import imgCertification from "@/assets/home/img_certification.webp"
 
 export default function Certification() {
   return (

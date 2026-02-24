@@ -1,5 +1,5 @@
 import React from "react";
-import ImageSalon from "@/assets/home/salon.png";
+import ImageSalon from "@/assets/home/salon.webp";
 import PerjalananKamiText from "@/assets/home/Perjalanan-Kami.svg";
 import Image from "next/image";
 
