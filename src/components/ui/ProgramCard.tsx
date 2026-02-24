@@ -53,7 +53,7 @@ export default function ProgramCard({
       )}
 
       <div
-        className={`program-card-header px-6 pt-6 pb-5 flex flex-col items-center gap-2 overflow-hidden ${headerGradient}`}
+        className={`program-card-header relative px-6 py-6 flex flex-col items-center justify-center gap-2 ${headerGradient}`}
       >
         <h3 className="text-white text-xl md:text-2xl font-semibold text-center leading-tight">
           {program.title}
