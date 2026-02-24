@@ -1,5 +1,6 @@
 export interface ProgramPackage {
   id: number;
+  type?: "primary" | "secondary"; // primary = pink (default), secondary = blue
   title: string;
   subtitle: string; // e.g. "Paket Dasar" or "Paket Lanjutan"
   note: string; // context: what's included from previous
