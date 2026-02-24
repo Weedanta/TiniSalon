@@ -12,11 +12,13 @@ const History = () => {
             src={PerjalananKamiText}
             alt="Perjalanan Kami"
             className="w-full h-auto"
+            draggable={false}
           />
           <Image
             src={ImageSalon}
             alt="Salon Tini"
             className="w-2/4 flex md:hidden h-auto object-contain mx-auto"
+            draggable={false}
           />
           <p className="lg:text-2xl md:text-base text-sm text-justify text-black">
             Tini Salon bermula dari ruang kecil yang disewa pada Juli 2002
@@ -33,6 +35,7 @@ const History = () => {
             src={ImageSalon}
             alt="Salon Tini"
             className="w-11/12  h-auto object-contain"
+            draggable={false}
           />
         </div>
       </div>

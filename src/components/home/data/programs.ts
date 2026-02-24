@@ -1,11 +1,11 @@
 export interface ProgramPackage {
   id: number;
-  type?: "primary" | "secondary"; // primary = pink (default), secondary = blue
+  type?: "primary" | "secondary"; 
   title: string;
-  subtitle: string; // e.g. "Paket Dasar" or "Paket Lanjutan"
-  note: string; // context: what's included from previous
-  badge?: string; // e.g. "Terlaris" or "Terlengkap"
-  highlight?: boolean; // true = accented card border
+  subtitle: string; 
+  note: string; 
+  badge?: string; 
+  highlight?: boolean;
   items: string[];
   duration: string;
   price: string;
