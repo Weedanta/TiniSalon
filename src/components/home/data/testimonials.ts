@@ -8,9 +8,9 @@ export interface Testimonial {
 export const TESTIMONIALS: Testimonial[] = [
   {
     id: 1,
-    name: "Ialaa fiia",
+    name: "Sartika Elisabeth",
     review:
-      "Cocok buat pemula maupun yang mau upgrade skill, Tini Salon selalu support muridnya sampai bisa",
+      "Belajar salon di sini sangat memuaskan karena pengajarnya ramah, suasananya menyenangkan, dan materi diajarkan sampai benar-benar paham sebelum lanjut, sehingga tidak menyesal memilih tempat ini.",
     rating: 5,
   },
   {
@@ -22,30 +22,30 @@ export const TESTIMONIALS: Testimonial[] = [
   },
   {
     id: 3,
-    name: "Martha Oktaviani",
+    name: "Ialaa fiia",
     review:
       "Creambath di Tini Salon jalan HM Joni 84 enak sekali. Karyawan yang menangani creambath enak sekali tangannya mantap dan puas. The best buat Tini salon",
     rating: 5,
   },
   {
     id: 4,
-    name: "Rina Harahap",
+    name: "Martha Oktaviani",
     review:
-      "Pelayanan ramah dan profesional. Saya sudah langganan di sini lebih dari 3 tahun, tidak pernah kecewa. Harga juga sangat terjangkau!",
+      "Salon disini bagus, motong rambutnya cantik sesuai dengan permintaan costumer, ownernya juga ramah",
     rating: 5,
   },
   {
     id: 5,
-    name: "Dewi Anggraini",
+    name: "Sandrinaamichell",
     review:
-      "Tempat yang nyaman, karyawan yang terlatih, dan hasil kerja yang memuaskan. Tini Salon memang pilihan terbaik untuk perawatan rambut.",
+      "Pelayanan nya bagus murah dan cantik. Puas deh pokok nyaa",
     rating: 5,
   },
   {
     id: 6,
-    name: "Sari Nainggolan",
+    name: "Medan Denai",
     review:
-      "Sudah coba banyak salon di Medan, tapi Tini Salon tetap yang terbaik. Hasilnya selalu konsisten dan karyawannya sangat berpengalaman.",
+      "Creambath di Tini Salon jalan HM Joni 84 enak sekali. Karyawan yang menangani creambath enak sekali tangannya mantap dan puas. The best buat Tini salon",
     rating: 5,
   },
   {
@@ -57,16 +57,16 @@ export const TESTIMONIALS: Testimonial[] = [
   },
   {
     id: 8,
-    name: "Yanti Simbolon",
+    name: "Dela Pratika",
     review:
-      "Pelatihan di Tini Salon sangat terstruktur dan mudah dipahami. Mentor-mentornya sabar dan selalu siap membantu. Sangat direkomendasikan!",
+      "facial di sini pelayanan nya bagus banget, waktu yg di dapat juga lebih lama, enak banget untuk refleksi muka disini. pelayanan kak novriana juga the best, ramah dan mantappp👍🏻🤩🤩",
     rating: 5,
   },
   {
     id: 9,
-    name: "Nurul Fadilah",
+    name: "Denima Halawa",
     review:
-      "Saya datang dari luar kota khusus untuk belajar di Tini Salon. Fasilitas lengkap, tempat tinggal disediakan, dan ilmunya sangat bermanfaat.",
+      "Saya belajar di sini, saya belajar sambil kerja, pulang kerja sudah sore, saya langsung les salon, jadi bisa dapat uang, dapat ilmu salon. Makasih ya kak...",
     rating: 5,
   },
 ];
