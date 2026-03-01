@@ -1,5 +1,5 @@
 import React from "react";
-import ImageSalon from "@/assets/home/salon.webp";
+import ImageSalon from "@/assets/home/sejarah.webp";
 import PerjalananKamiText from "@/assets/home/Perjalanan-Kami.svg";
 import Image from "next/image";
 
@@ -17,7 +17,7 @@ const History = () => {
           <Image
             src={ImageSalon}
             alt="Salon Tini"
-            className="w-2/4 flex md:hidden h-auto object-contain mx-auto"
+            className="w-2/4 flex md:hidden h-auto object-cover mx-auto rounded-2xl shadow-sm"
             draggable={false}
           />
           <p className="lg:text-2xl md:text-base text-sm text-justify text-black">
@@ -30,11 +30,11 @@ const History = () => {
             dan tim ahli di bidangnya.
           </p>
         </div>
-        <div className="w-full hidden md:flex justify-end">
+        <div className="w-7/12 hidden md:flex justify-end">
           <Image
             src={ImageSalon}
             alt="Salon Tini"
-            className="w-11/12  h-auto object-contain"
+            className="w-full  h-auto object-cover rounded-4xl shadow-sm"
             draggable={false}
           />
         </div>
