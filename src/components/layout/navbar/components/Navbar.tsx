@@ -63,6 +63,7 @@ export function Navbar() {
           <motion.a 
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              href="https://wa.me/6281370600131"
               className="bg-[#80ded9] hover:bg-[#6ed0cb] text-[#2d3748] rounded-full px-6 py-3 font-bold border-none md:flex text-base hidden cursor-pointer shadow-lg hover:shadow-xl transition-all"
           >
             Hubungi Kami
@@ -102,6 +103,7 @@ export function Navbar() {
                 whileTap={{ scale: 0.95 }}
                 className="bg-[#80ded9] hover:bg-[#6ed0cb] text-[#2d3748] rounded-full px-12 py-4 text-xl font-semibold border-none shadow-lg"
                 onClick={close}
+                href="https://wa.me/6281370600131"
               >
                 Hubungi Kami
               </motion.a>
