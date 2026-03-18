@@ -1,10 +1,10 @@
 export interface ProgramPackage {
   id: number;
-  type?: "primary" | "secondary"; 
+  type?: "primary" | "secondary";
   title: string;
-  subtitle: string; 
-  note: string; 
-  badge?: string; 
+  subtitle: string;
+  note: string;
+  badge?: string;
   highlight?: boolean;
   items: string[];
   duration: string;
@@ -43,7 +43,7 @@ export const PROGRAMS: ProgramPackage[] = [
       "Keriting Permanen",
       "Keriting Bulu Mata",
       "Terapi Telinga",
-      "Lulutan",
+      "Luluran",
       "Smoothing Rambut",
     ],
     duration: "Lama belajar: 2 bulan + 2 bulan PKL",
@@ -58,7 +58,8 @@ export const PROGRAMS: ProgramPackage[] = [
       "Toning Rambut",
       "Sanggulan Dasar",
       "Bentuk Rambut Dasar",
-      "Babyliss Boba",
+      "Make up Dasar",
+      "Babyliss Baba",
       "Manicure",
       "Pedicure",
     ],

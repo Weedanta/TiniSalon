@@ -5,6 +5,7 @@ import Pros from "./section/Pros";
 import ProgramSection from "./section/ProgramSection";
 import Testimonial from "./section/Testimonial";
 import Certification from "./section/Certification";
+import OpeningHours from "./section/OpeningHours";
 
 const HomePage = () => {
   return (
@@ -15,6 +16,7 @@ const HomePage = () => {
       <ProgramSection />
       <Certification />
       <Testimonial />
+      <OpeningHours />
     </div>
   );
 };
