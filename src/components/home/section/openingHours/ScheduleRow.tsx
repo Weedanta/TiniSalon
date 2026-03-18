@@ -17,7 +17,6 @@ export function ScheduleRow({
 }: ScheduleRowProps) {
   const px = compact ? "px-5 py-3" : "px-6 py-3.5";
   const gap = compact ? "gap-2" : "gap-3";
-  const dotSize = compact ? "w-1.5 h-1.5" : "w-2 h-2";
   const badgeSize = compact ? "text-[9px] px-1.5" : "text-[10px] px-2";
   const textSize = compact ? "text-sm" : "text-sm lg:text-base";
 
@@ -41,11 +40,6 @@ export function ScheduleRow({
       className={`flex items-center justify-between ${px} transition-colors duration-200 ${highlight}`}
     >
       <div className={`flex items-center ${gap}`}>
-        {isToday && (
-          <span
-            className={`${dotSize} rounded-full bg-primary-500 animate-pulse`}
-          />
-        )}
         <span
           className={`${textSize} font-semibold ${isToday ? "text-primary-500" : "text-grey-700"}`}
         >

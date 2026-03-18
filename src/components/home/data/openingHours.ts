@@ -19,7 +19,7 @@ export const SECTION_CONTENT = {
   description:
     "Kami siap melayani Anda setiap hari. Kunjungi Tini Salon di jam‑jam berikut untuk pengalaman perawatan terbaik.",
   cardTitle: "Jadwal Operasional",
-  todayLabel: "Hari Ini",
+  todayLabel: "Today",
 };
 
 export function getTodayIndex(): number {
