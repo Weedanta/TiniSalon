@@ -11,7 +11,7 @@ export const OPENING_HOURS: OpeningHour[] = [
   { day: "Kamis", hours: "08.00 – 21.00", dayIndex: 4 },
   { day: "Jumat", hours: "08.00 – 21.00", dayIndex: 5 },
   { day: "Sabtu", hours: "08.00 – 21.00", dayIndex: 6 },
-  { day: "Minggu", hours: "08.00 – 21.00", dayIndex: 0 },
+  { day: "Minggu", hours: "10.00 – 21.00", dayIndex: 0 },
 ];
 
 export const SECTION_CONTENT = {

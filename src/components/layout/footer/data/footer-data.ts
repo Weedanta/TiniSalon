@@ -1,5 +1,6 @@
 import icInstagram from "@/assets/home/icon/ic_instagram.svg";
 import icTiktok from "@/assets/home/icon/ic_tiktok.svg";
+import icFacebook from "@/assets/home/icon/ic_facebook.svg";
 import type { StaticImageData } from "next/image";
 
 export const FOOTER_BRAND = {
@@ -31,6 +32,12 @@ export const FOOTER_SOCIALS: {
     icon: icTiktok,
     alt: "TikTok",
   },
+  {
+    label: "@Tini Salon",
+    href: "https://www.facebook.com/share/v/1UNm3RnaDS/",
+    icon: icFacebook,
+    alt: "Facebook",
+  }
 ];
 
 export const FOOTER_COPYRIGHT =
