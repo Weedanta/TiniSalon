@@ -33,7 +33,7 @@ export const PROGRAMS: ProgramPackage[] = [
   {
     id: 2,
     title: "Paket 2",
-    subtitle: "Paket 1 + Lanjutan",
+    subtitle: "Seluruh Paket 1 + Lanjutan",
     note: "Semua materi Paket 1, ditambah skill perawatan lebih lanjut",
     badge: "Terlaris",
     highlight: true,
@@ -52,7 +52,7 @@ export const PROGRAMS: ProgramPackage[] = [
   {
     id: 3,
     title: "Paket 3",
-    subtitle: "Paket 2 + Tata Rias Dasar",
+    subtitle: "Seluruh Paket 1, 2 + Tata Rias Dasar",
     note: "Semua materi Paket 2, ditambah tata rias & perawatan kuku",
     items: [
       "Toning Rambut",
@@ -69,7 +69,7 @@ export const PROGRAMS: ProgramPackage[] = [
   {
     id: 4,
     title: "Paket 4",
-    subtitle: "Paket 3 + Pesta & Wisuda",
+    subtitle: "Seluruh Paket 1, 2, 3 + Pesta & Wisuda",
     note: "Semua materi Paket 3, ditambah rias acara formal",
     items: [
       "Smoothing Warna",
@@ -86,7 +86,7 @@ export const PROGRAMS: ProgramPackage[] = [
   {
     id: 5,
     title: "Paket 5",
-    subtitle: "Paket 4 + Sulam & Pengantin",
+    subtitle: "Seluruh Paket 1, 2, 3, 4 + Sulam & Pengantin",
     note: "Paket terlengkap — semua materi Paket 4 plus teknik semi-permanen",
     badge: "Terlengkap",
     items: [

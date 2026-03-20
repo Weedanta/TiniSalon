@@ -1,3 +1,4 @@
+import Menu from "@/assets/gallery/Tini Salon Medan.jpg";
 import salon from "@/assets/gallery/salon.webp";
 import salon1 from "@/assets/gallery/salon1.webp";
 import salon2 from "@/assets/gallery/salon2.webp";
@@ -30,29 +31,30 @@ export interface GalleryImage {
 }
 
 export const GALLERY_IMAGES: GalleryImage[] = [
-  { id: 0, src: salon, alt: "Tini Salon" },
-  { id: 1, src: salon1, alt: "Tini Salon" },
-  { id: 2, src: salon2, alt: "Tini Salon" },
-  { id: 3, src: salon3, alt: "Tini Salon" },
-  { id: 4, src: salon4, alt: "Tini Salon" },
-  { id: 5, src: salon5, alt: "Tini Salon" },
-  { id: 6, src: salon6, alt: "Tini Salon" },
-  { id: 7, src: salon7, alt: "Tini Salon" },
-  { id: 8, src: salon8, alt: "Tini Salon" },
-  { id: 9, src: salon9, alt: "Tini Salon" },
-  { id: 10, src: salon10, alt: "Tini Salon" },
-  { id: 11, src: salon11, alt: "Tini Salon" },
-  { id: 12, src: salon12, alt: "Tini Salon" },
-  { id: 13, src: salon13, alt: "Tini Salon" },
-  { id: 14, src: salon14, alt: "Tini Salon" },
-  { id: 15, src: salon15, alt: "Tini Salon" },
-  { id: 16, src: salon16, alt: "Tini Salon" },
-  { id: 17, src: salon17, alt: "Tini Salon" },
-  { id: 18, src: salon18, alt: "Tini Salon" },
-  { id: 19, src: salon19, alt: "Tini Salon" },
-  { id: 20, src: salon20, alt: "Tini Salon" },
-  { id: 21, src: salon21, alt: "Tini Salon" },
-  { id: 22, src: salon22, alt: "Tini Salon" },
+  { id: 0, src: Menu, alt: "Tini Salon" },
+  { id: 1, src: salon, alt: "Tini Salon" },
+  { id: 2, src: salon1, alt: "Tini Salon" },
+  { id: 3, src: salon2, alt: "Tini Salon" },
+  { id: 4, src: salon3, alt: "Tini Salon" },
+  { id: 5, src: salon4, alt: "Tini Salon" },
+  { id: 6, src: salon5, alt: "Tini Salon" },
+  { id: 7, src: salon6, alt: "Tini Salon" },
+  { id: 8, src: salon7, alt: "Tini Salon" },
+  { id: 9, src: salon8, alt: "Tini Salon" },
+  { id: 10, src: salon9, alt: "Tini Salon" },
+  { id: 11, src: salon10, alt: "Tini Salon" },
+  { id: 12, src: salon11, alt: "Tini Salon" },
+  { id: 13, src: salon12, alt: "Tini Salon" },
+  { id: 14, src: salon13, alt: "Tini Salon" },
+  { id: 15, src: salon14, alt: "Tini Salon" },
+  { id: 16, src: salon15, alt: "Tini Salon" },
+  { id: 17, src: salon16, alt: "Tini Salon" },
+  { id: 18, src: salon17, alt: "Tini Salon" },
+  { id: 19, src: salon18, alt: "Tini Salon" },
+  { id: 20, src: salon19, alt: "Tini Salon" },
+  { id: 21, src: salon20, alt: "Tini Salon" },
+  { id: 22, src: salon21, alt: "Tini Salon" },
+  { id: 23, src: salon22, alt: "Tini Salon" },
 ];
 
 export const GALLERY_CONTENT = {

@@ -1,5 +1,6 @@
 import icInstagram from "@/assets/home/icon/ic_instagram.svg";
 import icTiktok from "@/assets/home/icon/ic_tiktok.svg";
+import icFacebook from "@/assets/home/icon/ic_facebook.svg";
 import type { StaticImageData } from "next/image";
 
 export const FOOTER_BRAND = {
@@ -8,9 +9,9 @@ export const FOOTER_BRAND = {
 };
 
 export const FOOTER_CONTACT = {
-  phone: "+62 813 7060 0131",
+  phone: "+62 813 7896 5335",
   address:
-    "JL HM. Joni No.84, Teladan Tim., Kec. Medan Area, Kota Medan, Sumatera Utara 20216",
+    "Jl. H. M. Joni No. 84 (Depan Supermarket IRIAN), Simpang Bahagia, Pasar Merah Timur, Kec. Medan Area, Kota Medan, Sumatera Utara 20216",
 };
 
 export const FOOTER_SOCIALS: {
@@ -31,6 +32,12 @@ export const FOOTER_SOCIALS: {
     icon: icTiktok,
     alt: "TikTok",
   },
+  {
+    label: "@Tini Salon",
+    href: "https://www.facebook.com/share/v/1UNm3RnaDS/",
+    icon: icFacebook,
+    alt: "Facebook",
+  }
 ];
 
 export const FOOTER_COPYRIGHT =
