@@ -112,7 +112,7 @@ export default function ProgramCard({
 
         <div className="px-6 pb-6">
           <a
-            href={`https://wa.me/6281234567890?text=${encodeURIComponent(`Halo, saya tertarik dengan ${program.title} (${program.subtitle}). Boleh saya mendapatkan informasi lebih lanjut?`)}`}
+            href={`https://wa.me/6281378965335?text=${encodeURIComponent(`Halo, disini saya tertarik dengan ${program.title} (${program.subtitle}). Boleh saya mendapatkan informasi lebih lanjut ya? Terimakasih 🙏🏻`)}`}
             target="_blank"
             rel="noopener noreferrer"
             className="block text-center font-bold rounded-full py-3 px-6 transition-all duration-200 shadow-md hover:shadow-lg active:scale-95 text-sm md:text-base bg-secondary-500 hover:bg-secondary-400 text-grey-500"

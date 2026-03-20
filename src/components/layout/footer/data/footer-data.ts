@@ -8,7 +8,7 @@ export const FOOTER_BRAND = {
 };
 
 export const FOOTER_CONTACT = {
-  phone: "+62 813 7060 0131",
+  phone: "+62 813 7896 5335",
   address:
     "Jl. H. M. Joni No. 84 (Depan Supermarket IRIAN), Simpang Bahagia, Pasar Merah Timur, Kec. Medan Area, Kota Medan, Sumatera Utara 20216",
 };
