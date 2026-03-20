@@ -64,7 +64,7 @@ export default function ProgramCard({
       </div>
 
       <div className="bg-white flex flex-col gap-4 flex-1 h-full">
-        <p className="px-6 pt-4 text-xs text-grey-400 text-center italic leading-relaxed">
+        <p className="px-6 pt-4 text-xs text-grey-700 text-center italic leading-relaxed">
           {program.note}
         </p>
 
