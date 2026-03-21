@@ -26,7 +26,7 @@ export default function Certification() {
             transition={{ duration: 0.6, delay: 0.15 }}
             className="flex-1 text-grey-600 text-base lg:text-xl text-justify leading-relaxed"
           >
-            Setiap lulusan dari Rudy Hadisuwarno School akan mendapatkan{" "}
+            Setiap lulusan dari Tini Salon School akan mendapatkan{" "}
             <span className="text-grey-800 font-bold">sertifikasi resmi</span>{" "}
             yang telah diakui secara profesional. Sertifikasi ini menjadi bukti
             kompetensi dan siap mendukung langkah kamu di dunia salon dan
@@ -75,7 +75,7 @@ export default function Certification() {
             transition={{ duration: 0.6, delay: 0.15 }}
             className="text-grey-600 text-sm leading-relaxed text-justify"
           >
-            Setiap lulusan dari Rudy Hadisuwarno School akan mendapatkan{" "}
+            Setiap lulusan dari Tini Salon School akan mendapatkan{" "}
             <span className="text-grey-800 font-bold">sertifikasi resmi</span>{" "}
             yang telah diakui secara profesional. Sertifikasi ini menjadi bukti
             kompetensi dan siap mendukung langkah kamu di dunia salon dan
