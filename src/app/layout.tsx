@@ -66,7 +66,6 @@ export const metadata: Metadata = {
     "Tini Salon",
     "salon kecantikan Medan",
     "kursus salon profesional",
-    "Rudy Hadisuwarno",
   ],
   metadataBase: new URL("https://tinisalon.com"),
   alternates: {
