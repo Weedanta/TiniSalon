@@ -115,12 +115,12 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 @media (min-width: 768px) {
   .hero-surface {
     background-image: url("../assets/home/bg-desktop.webp");
+    background-attachment: fixed;
   }
 }
 
