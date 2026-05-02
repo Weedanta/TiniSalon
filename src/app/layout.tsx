@@ -108,6 +108,22 @@ export const metadata: Metadata = {
   },
 };
 
+import { Poppins } from "next/font/google";
+import localFont from "next/font/local";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-poppins",
+  display: "swap",
+});
+
+const blackSignature = localFont({
+  src: "../assets/font/BlackSignature_PERSONAL_USE_ONLY.otf",
+  variable: "--font-black-signature",
+  display: "swap",
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -115,7 +131,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id">
-      <body className="antialiased">
+      <body className={`${poppins.variable} ${blackSignature.variable} antialiased`}>
         <Navbar />
         {children}
         <Footer />
