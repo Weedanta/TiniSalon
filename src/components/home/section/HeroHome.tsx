@@ -17,7 +17,7 @@ const HeroHome = () => {
       <Image
         src={BannerMobile}
         alt="Banner Mobile"
-        className="md:hidden w-3xl h-auto"
+        className="md:hidden w-full h-auto"
         draggable={false}
       />
       <p className="font-medium text-sm sm:text-base md:text-xl xl:text-xl text-center">
@@ -25,7 +25,7 @@ const HeroHome = () => {
       </p>
       <Button
         variant={"default"}
-        href={"https://share.google/lNH0HRKpSWrmIwEaL"}
+        href={"https://maps.app.goo.gl/Zga7aTay3P3KnvwK8"}
         className="text-center mt-5 font-bold "
       >
         LIHAT SALON
