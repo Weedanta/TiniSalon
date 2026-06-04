@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import { Menu, X } from "lucide-react";
+import { TransitionLink } from "@/components/transition/TransitionLink";
 import { useNavigation } from "../hooks/use-navigation";
 import { NavbarList } from "./Navbar-list";
 import { cn } from "@/lib/utils";
@@ -52,7 +52,7 @@ export function Navbar() {
         )}
       >
         <div className="lg:max-w-7xl w-full flex items-center justify-between px-4 md:px-8 lg:px-4 xl:px-0">
-          <Link
+          <TransitionLink
             href="/"
             className="text-white text-2xl md:text-3xl font-bold group"
           >
@@ -64,7 +64,7 @@ export function Navbar() {
             >
               Tini Salon
             </motion.span>
-          </Link>
+          </TransitionLink>
 
           <NavbarList className="hidden md:flex" />
 

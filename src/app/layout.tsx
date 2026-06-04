@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "../styles/globals.css";
 import { Navbar } from "@/components/layout/navbar/components/Navbar";
 import { Footer } from "@/components/layout/footer/components/Footer";
+import { TransitionProvider } from "@/components/transition/TransitionContext";
+import { TransitionOverlay } from "@/components/transition/TransitionOverlay";
 
 export const metadata: Metadata = {
   title: {
@@ -132,9 +134,12 @@ export default function RootLayout({
   return (
     <html lang="id">
       <body className={`${poppins.variable} ${blackSignature.variable} antialiased`}>
-        <Navbar />
-        {children}
-        <Footer />
+        <TransitionProvider>
+          <TransitionOverlay />
+          <Navbar />
+          {children}
+          <Footer />
+        </TransitionProvider>
       </body>
     </html>
   );
