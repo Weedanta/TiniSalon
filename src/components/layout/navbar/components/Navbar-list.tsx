@@ -1,7 +1,7 @@
 "use client"
 
-import Link from "next/link"
 import { motion } from "framer-motion"
+import { TransitionLink } from "@/components/transition/TransitionLink"
 import { NAV_ITEMS } from "../data/nav-items"
 import { cn } from "@/lib/utils"
 
@@ -33,13 +33,13 @@ export function NavbarList({ className, itemClassName, onItemClick }: NavbarList
             show: { opacity: 1, y: 0 },
           }}
         >
-          <Link
+          <TransitionLink
             href={item.href}
             onClick={onItemClick}
             className={cn("text-white md:text-xl font-semibold hover:text-white/80 transition-colors hover:underline", itemClassName)}
           >
             {item.label}
-          </Link>
+          </TransitionLink>
         </motion.li>
       ))}
     </motion.ul>
