@@ -18,25 +18,14 @@ const ProgramSection = () => {
         Pilihan Program
       </motion.h2>
 
-      <div className="hidden md:flex md:flex-wrap justify-center gap-6 xl:gap-8 items-stretch">
+      <div className="flex flex-col md:flex-row md:flex-wrap justify-center gap-5 md:gap-6 xl:gap-8 items-stretch">
         {PROGRAMS.map((program, i) => (
           <div
             key={program.id}
-            className="flex flex-col w-[calc(33.333%-1rem)]"
+            className="flex flex-col w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)]"
           >
             <ProgramCard program={program} index={i} variant="secondary" />
           </div>
-        ))}
-      </div>
-
-      <div className="flex flex-col gap-5 md:hidden">
-        {PROGRAMS.map((program, i) => (
-          <ProgramCard
-            key={program.id}
-            program={program}
-            index={i}
-            variant="secondary"
-          />
         ))}
       </div>
     </section>

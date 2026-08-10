@@ -19,25 +19,19 @@ export default function ProgramSection() {
             Pilih Program Belajarmu
           </motion.h2>
 
-          <div className="hidden md:grid md:grid-cols-2 gap-6 xl:gap-8 items-stretch">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6 xl:gap-8 items-stretch">
             {PROGRAMS.map((program, i) => {
               const isLastOdd =
                 PROGRAMS.length % 2 !== 0 && i === PROGRAMS.length - 1;
               return (
                 <div
                   key={program.id}
-                  className={`flex flex-col${isLastOdd ? " col-span-2 w-1/2 mx-auto" : ""}`}
+                  className={`flex flex-col${isLastOdd ? " md:col-span-2 md:w-1/2 md:mx-auto" : ""}`}
                 >
                   <ProgramCard program={program} index={i} />
                 </div>
               );
             })}
-          </div>
-
-          <div className="flex flex-col gap-5 md:hidden">
-            {PROGRAMS.map((program, i) => (
-              <ProgramCard key={program.id} program={program} index={i} />
-            ))}
           </div>
         </div>
       </div>

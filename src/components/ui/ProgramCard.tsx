@@ -71,27 +71,20 @@ export default function ProgramCard({
         <div className={`mx-5 rounded-2xl px-5 py-4 flex-1 min-h-0 ${itemsBg}`}>
           <ul className="flex flex-col gap-2">
             {program.items.map((item, i) => (
-              <li key={i} className="flex items-start gap-2.5">
-                <span
-                  className={`mt-0.5 shrink-0 flex items-center justify-center w-4 h-4 rounded-full ${bulletBg}`}
+              <li key={i} className="flex items-start gap-2.5 text-grey-700 text-sm font-medium leading-snug">
+                <svg
+                  className={`mt-0.5 shrink-0 p-0.5 w-4 h-4 rounded-full text-white ${bulletBg}`}
+                  viewBox="0 0 12 10"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden="true"
                 >
-                  <svg
-                    className="w-2.5 h-2.5 text-white"
-                    viewBox="0 0 12 10"
-                    fill="none"
-                  >
-                    <path
-                      d="M1 5l3 3 7-7"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </span>
-                <span className="text-grey-700 text-sm font-medium leading-snug">
-                  {item}
-                </span>
+                  <path d="M1 5l3 3 7-7" />
+                </svg>
+                <span>{item}</span>
               </li>
             ))}
           </ul>
