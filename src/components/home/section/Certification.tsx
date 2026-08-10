@@ -18,62 +18,13 @@ export default function Certification() {
           Sertifikasi &nbsp;Program
         </motion.h2>
 
-        <div className="hidden md:flex items-center gap-10 xl:gap-16">
-          <motion.p
-            initial={{ opacity: 0, x: -40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.15 }}
-            className="flex-1 text-grey-600 text-base lg:text-xl text-justify leading-relaxed"
-          >
-            Setiap lulusan dari Tini Salon School akan mendapatkan{" "}
-            <span className="text-grey-800 font-bold">sertifikasi resmi</span>{" "}
-            yang telah diakui secara profesional. Sertifikasi ini menjadi bukti
-            kompetensi dan siap mendukung langkah kamu di dunia salon dan
-            kecantikan.
-          </motion.p>
-
-          <motion.div
-            initial={{ opacity: 0, x: 40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.25 }}
-            className="shrink-0"
-          >
-            <Image
-              src={imgCertification}
-              alt="Sertifikasi Tini Salon"
-              width={380}
-              height={280}
-              className="w-72 lg:w-80 xl:w-96 h-auto rounded-2xl object-cover"
-              draggable={false}
-            />
-          </motion.div>
-        </div>
-
-        <div className="flex flex-col gap-6 md:hidden">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <Image
-              src={imgCertification}
-              alt="Sertifikasi Tini Salon"
-              width={520}
-              height={390}
-              className="w-full h-auto rounded-2xl object-cover"
-              draggable={false}
-            />
-          </motion.div>
-
+        <div className="flex flex-col md:flex-row items-center gap-6 md:gap-10 xl:gap-16">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.15 }}
-            className="text-grey-600 text-sm leading-relaxed text-justify"
+            className="order-2 md:order-1 flex-1 text-grey-600 text-sm md:text-base lg:text-xl text-justify leading-relaxed"
           >
             Setiap lulusan dari Tini Salon School akan mendapatkan{" "}
             <span className="text-grey-800 font-bold">sertifikasi resmi</span>{" "}
@@ -81,6 +32,24 @@ export default function Certification() {
             kompetensi dan siap mendukung langkah kamu di dunia salon dan
             kecantikan.
           </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="order-1 md:order-2 shrink-0 w-full md:w-auto"
+          >
+            <Image
+              src={imgCertification}
+              alt="Sertifikasi Tini Salon"
+              width={480}
+              height={360}
+              className="w-full md:w-72 lg:w-80 xl:w-96 h-auto rounded-2xl object-cover"
+              draggable={false}
+              sizes="(max-width: 768px) 100vw, (max-width: 1280px) 320px, 384px"
+            />
+          </motion.div>
         </div>
       </div>
     </section>

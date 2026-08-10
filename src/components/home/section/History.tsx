@@ -5,19 +5,13 @@ import Image from "next/image";
 
 const History = () => {
   return (
-    <section className=" bg-white flex items-center justify-center">
-      <div className=" flex flex-col md:flex-row lg:max-w-7xl w-full px-8 md:px-8 lg:px-4 xl:px-0 xl:gap-20 md:gap-16 gap-8 xl:my-40 lg:my-28 md:my-20 my-16">
-        <div className="w-full flex flex-col justify-center  gap-8 md:gap-4">
+    <section className="bg-white flex items-center justify-center">
+      <div className="flex flex-col md:flex-row lg:max-w-7xl w-full px-8 md:px-8 lg:px-4 xl:px-0 xl:gap-20 md:gap-16 gap-8 xl:my-40 lg:my-28 md:my-20 my-16">
+        <div className="w-full md:w-1/2 flex flex-col justify-center gap-6 md:gap-4">
           <Image
             src={PerjalananKamiText}
             alt="Perjalanan Kami"
             className="w-full h-auto"
-            draggable={false}
-          />
-          <Image
-            src={ImageSalon}
-            alt="Salon Tini"
-            className="w-2/4 flex md:hidden h-auto object-cover mx-auto rounded-2xl shadow-sm"
             draggable={false}
           />
           <p className="lg:text-2xl md:text-base text-sm text-justify text-black">
@@ -30,12 +24,13 @@ const History = () => {
             dan tim ahli di bidangnya.
           </p>
         </div>
-        <div className="w-7/12 hidden md:flex justify-end">
+        <div className="w-full md:w-7/12 flex justify-center md:justify-end">
           <Image
             src={ImageSalon}
             alt="Salon Tini"
-            className="w-full  h-auto object-cover rounded-4xl shadow-sm"
+            className="w-3/4 md:w-full h-auto object-cover rounded-2xl md:rounded-4xl shadow-sm"
             draggable={false}
+            sizes="(max-width: 768px) 75vw, (max-width: 1280px) 50vw, 600px"
           />
         </div>
       </div>
