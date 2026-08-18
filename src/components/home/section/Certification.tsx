@@ -42,7 +42,7 @@ export default function Certification() {
           >
             <Image
               src={imgCertification}
-              alt="Sertifikasi Tini Salon"
+              alt="Contoh sertifikat resmi kelulusan program kursus Tini Salon School"
               width={480}
               height={360}
               className="w-full md:w-72 lg:w-80 xl:w-96 h-auto rounded-2xl object-cover"

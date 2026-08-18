@@ -8,7 +8,7 @@ const HeroProgram = () => {
     <HeroSection className="flex flex-col justify-center items-center gap-6">
       <Image
         src={TitleProgram}
-        alt="Title Program"
+        alt="Program Kursus Salon Profesional Tini Salon"
         className="w-72 md:w-xs xl:w-sm h-auto"
         draggable={false}
         priority

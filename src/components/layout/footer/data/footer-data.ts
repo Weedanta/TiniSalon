@@ -24,19 +24,19 @@ export const FOOTER_SOCIALS: {
     label: "@tinisalon2003",
     href: "https://instagram.com/tinisalon2003",
     icon: icInstagram,
-    alt: "Instagram",
+    alt: "Ikon Instagram – ikuti @tinisalon2003",
   },
   {
     label: "@tini.salon_",
     href: "https://tiktok.com/@tini.salon_",
     icon: icTiktok,
-    alt: "TikTok",
+    alt: "Ikon TikTok – ikuti @tini.salon_",
   },
   {
     label: "@Tini Salon",
     href: "https://www.facebook.com/share/v/1UNm3RnaDS/",
     icon: icFacebook,
-    alt: "Facebook",
+    alt: "Ikon Facebook – Tini Salon Medan",
   }
 ];
 

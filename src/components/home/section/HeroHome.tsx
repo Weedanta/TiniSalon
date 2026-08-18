@@ -10,7 +10,7 @@ const HeroHome = () => {
     <HeroSection className="gap-4 items-center">
       <Image
         src={BannerDesktop}
-        alt="Banner Desktop"
+        alt="Tini Salon – Salon kecantikan dan kursus profesional di Medan"
         className="hidden md:block md:w-2xl xl:w-4xl h-auto"
         draggable={false}
         priority
@@ -18,7 +18,7 @@ const HeroHome = () => {
       />
       <Image
         src={BannerMobile}
-        alt="Banner Mobile"
+        alt="Tini Salon – Salon kecantikan dan kursus profesional di Medan"
         className="md:hidden w-full h-auto"
         draggable={false}
         priority

@@ -10,7 +10,7 @@ const History = () => {
         <div className="w-full md:w-1/2 flex flex-col justify-center gap-6 md:gap-4">
           <Image
             src={PerjalananKamiText}
-            alt="Perjalanan Kami"
+            alt="Tulisan dekoratif Perjalanan Kami – sejarah Tini Salon"
             className="w-full h-auto"
             draggable={false}
           />
@@ -27,7 +27,7 @@ const History = () => {
         <div className="w-full md:w-7/12 flex justify-center md:justify-end">
           <Image
             src={ImageSalon}
-            alt="Salon Tini"
+            alt="Foto interior Tini Salon Medan sejak 2003"
             className="w-3/4 md:w-full h-auto object-cover rounded-2xl md:rounded-4xl shadow-sm"
             draggable={false}
             sizes="(max-width: 768px) 75vw, (max-width: 1280px) 50vw, 600px"
