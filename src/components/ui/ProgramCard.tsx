@@ -95,7 +95,7 @@ export default function ProgramCard({
         </p>
 
         <div className="px-6 flex items-center gap-2 justify-center">
-          <Image src={Pricetag} alt="Price" className="h-5 w-5 shrink-0" />
+          <Image src={Pricetag} alt="" aria-hidden={true} className="h-5 w-5 shrink-0" />
           <span
             className={`font-extrabold text-xl md:text-2xl tracking-tight ${priceColor}`}
           >
