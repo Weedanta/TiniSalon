@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "../styles/globals.css";
 import { Navbar } from "@/components/layout/navbar/components/Navbar";
 import { Footer } from "@/components/layout/footer/components/Footer";
+import { MobileCTA } from "@/components/layout/MobileCTA";
 import { TransitionProvider } from "@/components/transition/TransitionContext";
 import { TransitionOverlay } from "@/components/transition/TransitionOverlay";
 
@@ -12,6 +13,20 @@ export const metadata: Metadata = {
   },
   description:
     "Tini Salon – Tempat kursus salon dan kecantikan terbaik di Medan sejak 2003. Kursus salon bersertifikat, siap kerja, sampai mahir, harga terjangkau, bisa dicicil, ada tempat tinggal, wifi gratis. Berlokasi di Pasar Merah Medan.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
+  manifest: "/site.webmanifest",
+  other: {
+    "msapplication-TileColor": "#e60283",
+  },
   keywords: [
     "Belajar salon di Medan",
     "Kursus salon di Medan",
@@ -140,6 +155,7 @@ export default function RootLayout({
           <Navbar />
           {children}
           <Footer />
+          <MobileCTA />
         </TransitionProvider>
       </body>
     </html>
